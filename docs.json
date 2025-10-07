@@ -8,81 +8,65 @@
     "dark": "#0EA5E9"
   },
   "favicon": "/favicon.svg",
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart"
-            ]
-          },
-          {
-            "group": "Connections",
-            "pages": [
-              "connections/linkedin-integration"
-            ]
-          },
-          {
-            "group": "Content Library",
-            "pages": [
-              "content-library/content-management",
-              "content-library/searching-filtering"
-            ]
-          },
-          {
-            "group": "Organization Settings",
-            "pages": [
-              "organization-settings/admin",
-              "organization-settings/user-roles"
-            ]
-          },
-          {
-            "group": "Analytics",
-            "pages": [
-              "analytics/analytics"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": []
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Shimmer Home",
-          "href": "https://www.tryshimmer.com",
-          "icon": "house"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
   "logo": {
     "light": "/logo/shimmer-light.svg",
     "dark": "/logo/shimmer-dark.svg"
   },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Getting started",
+        "pages": [
+          "index",
+          "quickstart"
+        ]
+      },
+      {
+        "group": "Connections",
+        "pages": [
+          "connections/linkedin-integration"
+        ]
+      },
+      {
+        "group": "Content Library",
+        "pages": [
+          "content-library/content-management",
+          "content-library/searching-filtering"
+        ]
+      },
+      {
+        "group": "Organization Settings",
+        "pages": [
+          "organization-settings/admin",
+          "organization-settings/user-roles"
+        ]
+      },
+      {
+        "group": "Analytics",
+        "pages": [
+          "analytics/analytics"
+        ]
+      }
+    ]
+  },
+  "anchors": [
+    {
+      "name": "Shimmer",
+      "url": "https://www.tryshimmer.com",
+      "icon": "house"
+    }
+  ],
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:hi@support@tryshimmer.com"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://app.tryshimmer.com"
     }
   },
   "contextual": {
