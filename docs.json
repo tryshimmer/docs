@@ -21,6 +21,12 @@
             ]
           },
           {
+            "group": "Connections",
+            "pages": [
+              "connections/linkedin-integration"
+            ]
+          },
+          {
             "group": "Content Library",
             "pages": [
               "content-library/content-management",
@@ -30,7 +36,14 @@
           {
             "group": "Organization Settings",
             "pages": [
-              "organization-settings/admin"
+              "organization-settings/admin",
+              "organization-settings/user-roles"
+            ]
+          },
+          {
+            "group": "Analytics",
+            "pages": [
+              "analytics/analytics"
             ]
           }
         ]
