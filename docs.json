@@ -56,9 +56,9 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Shimmer Home",
+          "href": "https://www.tryshimmer.com",
+          "icon": "house"
         },
         {
           "anchor": "Blog",
