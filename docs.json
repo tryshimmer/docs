@@ -17,15 +17,14 @@
             "group": "Getting started",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "quickstart"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Content Library",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "content-library/content-management",
+              "content-library/searching-filtering"
             ]
           },
           {
