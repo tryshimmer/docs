@@ -1,0 +1,57 @@
+---
+title: "Slack & Microsoft Teams Integration"
+---
+
+Shimmer can post notifications to a Slack channel or a Microsoft Teams channel whenever a piece of content is recommended for sharing. Both integrations are org-level (one connection per organization) and are configured by admins only.
+
+## Slack
+
+### Connecting Slack
+
+1. Go to **Settings → Integrations**
+2. Click **Connect Slack**.
+3. You'll be redirected to Slack's OAuth consent screen. Approve the requested permissions (`chat:write`, `incoming-webhook`, `channels:read`).
+4. Slack redirects back to Shimmer and the connection is saved.
+
+### What triggers a notification
+
+A Slack message is sent whenever an admin **recommends** a piece of content (via the content action menu → Recommend for Sharing). The message includes:
+
+- Content title and a truncated body preview
+- Author and category
+- Who recommended it
+- A **"View in Shimmer"** button linking directly to the content
+
+### Testing the connection
+
+From the admin settings page, use the **Send Test Message** button. This sends a sample message to the configured channel.
+
+### Disconnecting
+
+Click **Disconnect** in admin settings. This removes the connection.
+
+## Microsoft Teams
+
+### Connecting Teams
+
+1. Go to **Settings → Integrations** (Teams section).
+2. Click **Connect Teams**.
+3. You'll be redirected to Microsoft's OAuth consent screen. Approve the scopes: `ChannelMessage.Send`, `Channel.ReadBasic.All`, `Team.ReadBasic.All`, `offline_access`, `openid`.
+4. On redirect back, Shimmer auto-selects the first available team and its **General** channel (or first channel). If a team/channel is found, the integration is marked **enabled** immediately.
+
+### What gets posted to Teams
+
+Notifications use **Adaptive Cards** (v1.4) and are triggered when content is recommended. Each card contains:
+
+- Header: "📌 Content Recommended for Sharing"
+- Content title and a 200-character body preview
+- A fact set: Author, Category, Recommender
+- A **"View Content"** action button
+
+### Testing the connection
+
+Click **Test Connection** in admin settings. This sends an Adaptive Card reading "✅ Teams integration test successful!" to the configured channel.
+
+### Disconnecting
+
+Click **Disconnect** in admin settings. This removes the connection.

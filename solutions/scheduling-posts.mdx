@@ -1,0 +1,85 @@
+---
+title: "Calendar & Scheduling Posts"
+---
+
+The Calendar page is the central hub for managing all scheduled LinkedIn posts across the organization. Posts can be created from the Content Library, viewed and filtered on the calendar, and edited or cancelled directly from the calendar view.
+
+## Calendar page overview
+
+Navigate to **Calendar** from the main sidebar.
+
+### Views
+
+| View | Description |
+| --- | --- |
+| **Calendar Grid** | Monthly grid of days with scheduled posts showing colored dots. Click a day to see a popup with all posts for that date. |
+| **List View** | Chronological list of all posts, useful for scanning across months or reviewing failed/cancelled posts. |
+
+Switch between views using the toggle in the top-right of the calendar header.
+
+### Filters
+
+Use the status filter bar to narrow the list:
+
+| Filter | Shows |
+| --- | --- |
+| All | Every post regardless of status |
+| Scheduled | Posts waiting to publish |
+| Posted | Successfully published posts |
+| Failed | Posts that errored on send |
+| Cancelled | Posts manually cancelled |
+
+If there are any failed posts, a red alert banner appears at the top of the page with a **Show failures** button that switches directly to list view filtered to failed posts.
+
+## Creating a scheduled post
+
+Scheduled posts are created from the **Content Library**, not from the Calendar itself.
+
+1. Open any content card or the Content Preview page.
+2. Click **Schedule for Later**.
+3. A dialog opens. Select a date and time (must be in the future).
+4. If you are an admin and there are opted-in team members, you can also choose **Post As** to schedule on their behalf.
+5. Click **Schedule**.
+
+The post appears immediately in the Calendar.
+
+## Editing and rescheduling a post
+
+`Pending` and `failed` posts can be edited directly from the Calendar.
+
+1. On the Calendar, click the day containing the post (grid view) or find it in list view.
+2. Click the **pencil icon** on the post card.
+3. An **Edit & Reschedule** dialog opens with two columns:
+   - **Left**: editable post text (full textarea)
+   - **Right**: date/time picker
+4. Adjust text, date, or both, then click **Save & Reschedule**.
+
+Saving a `failed` post resets its status to `pending` so the scheduler will retry it at the new time.
+
+## Cancelling a post
+
+1. Find the post in the Calendar.
+2. Click the **× Cancel** button on the post card.
+3. Confirm — the post moves to `cancelled` status and will not publish.
+
+Canceled posts remain in the database and are visible under the Canceled filter for audit purposes.
+
+## Who can see and manage what
+
+| Action | Members | Admins |
+| --- | --- | --- |
+| View scheduled posts | Own posts only | All posts in the organisation |
+| Create posts | For themselves | For themselves or opted-in members |
+| Edit / reschedule | Own `pending`/`failed` posts | Any post in the organisation |
+| Cancel | Own `pending` posts | Any `pending` post in the organisation |
+
+## Failure handling
+
+When a post fails:
+
+- The post card on the Calendar shows a red **Failed** badge and the error message.
+
+- The banner at the top of the Calendar page highlights that failures exist.
+- An admin or the post owner can **Edit & Reschedule** the post to retry it.
+
+---
