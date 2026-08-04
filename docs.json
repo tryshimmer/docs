@@ -23,7 +23,8 @@
       {
         "group": "Connections",
         "pages": [
-          "connections/linkedin-integration"
+          "connections/linkedin-integration",
+          "connections/slack-and-microsoft-teams-integration"
         ]
       },
       {
@@ -44,6 +45,13 @@
         "group": "Analytics",
         "pages": [
           "analytics/analytics"
+        ]
+      },
+      {
+        "group": "Solutions",
+        "pages": [
+          "solutions/posting-on-behalf-of-team-members",
+          "solutions/scheduling-posts"
         ]
       }
     ]
